@@ -498,7 +498,7 @@ function signOut() {
 }
 function gotoS1() {
 	if (localStorage.getItem("doesDataExist") == 'true') {
-		window.location = "file:///C:/Users/Joyce/Desktop/capstoneS1.html";
+		window.location = "S1.html";
 	}
 }
 function logIn() {
