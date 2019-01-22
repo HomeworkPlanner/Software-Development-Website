@@ -1,9 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="style.css">
+	<link type="text/css" rel="stylesheet" href="capstone-style.css">
+	<link type="text/css" rel="stylesheet" href="home-style.css">
+	<script type="text/javascript" src="capstone.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title>home</title>
 </head>
-<body>
-	<a href = "youtube.com">test</a>
+<body onload="resetWebsite(), resetValue()">
+	<!--<form name="data" id="data">
+		<input name="box" id="box" type="text" placeholder="put in time"/>
+		<input type="button" value="submit" onClick="addData()"/>
+	</form>
+	<div id="list"></div>-->
+	<div id="genInfo">
+		<div id="shadow"></div>
+		<div id="whitebox">
+			<p id="Welcome">Hi, Welcome to Homework Helper</p>
+			<p id="instructions2">Enter your 4 core subjects</p>
+			<form id="subjects">
+				<input name="Username" id="Username" class="subjectboxes" type="text" placeholder="Username"/>
+				<input name="Password" id="Password" class="subjectboxes" type="password" placeholder="Password"/>
+				<input name="Email" id="Email" class="subjectboxes" type="email" placeholder="Email"/>
+				<input name="Grade" id="Grade" class="subjectboxes" type="date"/>
+				<input name="subject1" id="subject1" class="subjectboxes" type="text" placeholder="subject 1"/>
+				<input name="subject2" id="subject2" class="subjectboxes" type="text" placeholder="subject 2"/>
+				<input name="subject3" id="subject3" class="subjectboxes" type="text" placeholder="subject 3"/>
+				<input name="subject4" id="subject4" class="subjectboxes" type="text" placeholder="subject 4"/>
+				<input type="button" id="submit" value="submit" onClick="addGenInfo()"/>
+			</form>
+			<div id="xDiv" onClick="hideGenInfo()">X</div>
+			<p id="warning">Check to see if all boxes are filled.</p>
+		</div>
+	</div>
+	<div id="header">
+		<div><p id="signOut" onmouseover="NavBarAnimation()" onmouseleave="resetMove()" onClick="signOut()">Sign Out</p></div>
+		<p id="title">Home</p>
+		<div><p id="signUp" onmouseover="NavBarAnimation()" onmouseleave="resetMove()" onClick="signUp()">Sign Up</p></div>
+		<p id="or">or</p>
+		<p id="logIn">Log In</p>
+		<input name="Username2" id="Username2" class="logIn2" type="text" placeholder="Username"/>
+		<input name="Password2" id="Password2" class="logIn2" type="password" placeholder="Password"/>
+		<input onclick="logIn()" onmouseover="NavBarAnimation()" onmouseleave="resetMove()"name="enterLogIn" id="enterLogIn" value="Enter" type="button" />
+	</div>
+	<div id="sbackground">
+		<div id="subBackground"><p id="sub">Subjects</p></div>
+	</div>
+	<!--<a href="file:///C:/Users/Joyce/Desktop/capstoneS1.html">--><div onclick="gotoS1()" class="s" id="s1"></div><!--</a>-->
+	<a href="file:///C:/Users/Joyce/Desktop/capstoneS2.html"><div class="s" id="s2"></div></a>
+	<a href="file:///C:/Users/Joyce/Desktop/CapstoneS3.html"><div class="s" id="s3"></div></a>
+	<div class="s" id="s4"></div>
+	<div id ="backgroundReminder">
+		<p id="Reminder">Reminders</p>
+		<img id="circ1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Rule_Segment_-_Circle_open_-_20px.svg/2000px-Rule_Segment_-_Circle_open_-_20px.svg.png" />
+		<div id="colorCirc" onclick="recordDate()"></div>
+		<input type="text" name="Reminder1" id="Reminder1" placeholder="Assignment 1"/>
+		<input type="date" name="date1" id="date1" />
+		<input type="time" name="time1" id="time1" placeholder="due time"/>
+		<img id="line1a" src="https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/1/11/Blackline.png/revision/latest/scale-to-width-down/320?cb=20161214171118" />
+	</div>
+	<img id="mathImg" src="https://astar.tv/wp-content/uploads/2016/03/Maths-640x320.jpg" />
+	<img id="scienceImg" src="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/NGTYhyRhgilq4uu1a/videoblocks-doodle-cartoon-animation-of-science-chemistry-physics-astronomy-and-biology-school-education-subject-used-for-presenation-title-in-4k-ultra-hd_sl2xqduzw_thumbnail-full12.png" />
+	<img id="englishImg" src="http://abcpilsenathletics.org/wp-content/uploads/2017/06/reading.jpg" />
+	<img id="historyImg" src="https://www.kidsdiscover.com/wp-content/uploads/2016/06/document_520_2.jpg" />
 </body>
 </html>
+
