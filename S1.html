@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="capstone-style.css">
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>-->
+	<script src="Chart.min.js"></script>
+	<script type="text/javascript" src="capstone.js"></script>
+	<title>Subject 1</title>
+</head>
+<body onload="Subject1(), setDataAfterReload()">
+<div id="S1Page">
+	<div id="header2">
+		<div id="title2"></div>
+		<!--<div><p id="signUp" onClick="showGenInfo()">Sign Up</p></div>
+		<p id="or">or</p>
+		<p id="logIn">Log In</p>
+		<input name="Username2" id="Username2" class="logIn2" type="text" placeholder="Username"/>
+		<input name="Password2" id="Password2" class="logIn2" type="text" placeholder="Password"/>-->
+	</div>
+	<div id="size"><canvas id="myChart"></canvas>
+	<input name="time" type="text" id="time"/>
+	<input onclick="addData()" id="addValOnGraph" type="button" value="enter"/>
+	<div id="bodyS1"></div>
+	<div id="prediction"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="container">
+	<!-- time to add the controls -->
+	<input id="start" name="controls" type="radio" />
+	<input id="stop" name="controls" type="radio" />
+	<input id="reset" name="controls" type="radio" />
+	<div class="timer">
+		<div class="cell">
+			<div class="numbers tenhour moveten">0 1 2 3 4 5 6 7 8 9</div>
+		</div>
+		<div class="cell">
+			<div class="numbers hour moveten">0 1 2 3 4 5 6 7 8 9</div>
+		</div>
+		<div class="cell divider"><div class="numbers">:</div></div>
+		<div class="cell">
+			<div class="numbers tenminute movesix">0 1 2 3 4 5 6</div>
+		</div>
+		<div class="cell">
+			<div class="numbers minute moveten">0 1 2 3 4 5 6 7 8 9</div>
+		</div>
+		<div class="cell divider"><div class="numbers">:</div></div>
+		<div class="cell">
+			<div class="numbers tensecond movesix">0 1 2 3 4 5 6</div>
+		</div>
+		<div class="cell">
+			<div class="numbers second moveten">0 1 2 3 4 5 6 7 8 9</div>
+		</div>
+		<div class="cell divider"><div class="numbers">:</div></div>
+		<div class="cell">
+			<div class="numbers milisecond moveten">0 1 2 3 4 5 6 7 8 9</div>
+		</div>
+		<div class="cell">
+			<div class="numbers tenmilisecond moveten">0 1 2 3 4 5 6 7 8 9</div>
+		</div>
+		<div class="cell">
+			<div class="numbers hundredmilisecond moveten">0 1 2 3 4 5 6 7 8 9</div>
+		</div>
+	</div>
+	<!-- Lables for the controls -->
+	<div id="timer_controls">
+		<label for="start">Start</label>
+		<label for="stop">Stop</label>
+		<label for="reset">Reset</label>
+	</div>
+</div>
+
+<!-- Lets load up prefixfree first -->
+<script src="http://thecodeplayer.com/uploads/js/prefixfree.js" type="text/javascript"></script>
+<!-- You can download it from http://leaverou.github.com/prefixfree/ -->
+</div>
+</body>
+</html>
